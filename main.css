@@ -1,0 +1,237 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.main_box {
+  height: 100vh;
+  width: 100%;
+  background-image: url("jugnu/wp2555875-space-background.png");
+  background-size: cover;
+}
+.btn_one i {
+  color: white;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  font-weight: 800;
+  font-size: 30px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.sidebar_menu {
+  position: fixed;
+  left: -350px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 1);
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.sidebar_menu .logo {
+  position: absolute;
+  line-height: 60px;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo a {
+  position: absolute;
+  color: white;
+  left: 60px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+.sidebar_menu .btn_two i {
+  color: grey;
+  line-height: 60px;
+  font-size: 20px;
+  position: absolute;
+  left: 270px;
+  opacity: 0;
+  cursor: pointer;
+}
+.sidebar_menu .menu {
+  color: white;
+  position: absolute;
+  width: 300px;
+  top: 80px;
+  height: 60px;
+}
+.sidebar_menu .menu li {
+  margin-top: 5px;
+  padding: 14px 20px;
+}
+.sidebar_menu .menu a,
+i {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.sidebar_menu .menu i {
+  padding-right: 8px;
+}
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+}
+.sidebar_menu .social_media i {
+  opacity: 0.5;
+  color: white;
+  padding: 5px;
+  padding: 10px;
+}
+#check {
+  display: none;
+}
+.sidebar_menu .menu li:hover {
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transition:all .25s ease-in;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  -webkit-transition:all .25s ease-in;
+  -moz-transition:all .25s ease-in;
+  -ms-transition:all .25s ease-in;
+  -o-transition:all .25s ease-in;
+}
+.btn_two i {
+  padding-top: 18px;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.btn_two i:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+.btn_one i:hover {
+  font-size: 40px;
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+#check:checked ~ .btn_one {
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}
+body{
+  background: black;
+  background-size: cover;
+}
+.moon{
+  width: 425px;
+  height: 425px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -50%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: inset -2em -2em 4em #000, -0em  -0.5em 2em #807878;
+  opacity: 1;
+  
+  
+}
+.moon::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: -40px -40px  50px 2px black inset;
+}
+.moon>div{
+  width: 200%;
+  height: 100%;
+  animation: spin 40s linear alternate infinite;
+  background: url("jugnu/WhatsApp\ Image\ 2024-09-05\ at\ 16.13.09_0a0df1bd.jpg");
+  background-size: cover;
+}
+@keyframes spin{
+  to{
+        transform:translateX(-50%);
+        -webkit-transform:translateX(-50%);
+        -moz-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+        -o-transform:translateX(-50%);
+}
+}
+.heading{
+  color:#807878;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 9.5em;
+}
+
+.details{
+  color: rgba(255, 255, 255, 1);
+  height: 500px;
+  width: 800px;
+  position: absolute;
+  right: 20px;
+  top: 20%;
+}
+.det_li{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-left: 1em;
+}
+.topbar{
+  color: #ffde21;
+  position: absolute;
+  right: 20px;
+  top:0.5em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+
+}
+#check:checked ~ .moon{
+  right: -20%;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+#check:checked ~.details{
+  width: 700px;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+
